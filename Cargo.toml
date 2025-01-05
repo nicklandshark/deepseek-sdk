@@ -1,0 +1,15 @@
+[package]
+name = "deepseek-sdk"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+reqwest = { version = "0.12.12", features = ["json"] }
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = "1.0.134"
+thiserror = "2.0.9"
+
+[dev-dependencies]
+dotenv = "0.15.0"
+eyre = "0.6.12"
+tokio = { version = "1.42.0", features = ["macros"] }
